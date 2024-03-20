@@ -1,0 +1,47 @@
+.text-color {
+    color: #c28498 !important
+}
+
+.bg-color {
+    background-color: #c28498 !important
+}
+
+.bg-color-dark {
+    color: #fff !important;
+    background-color: #252525 !important
+}
+
+.container-color-dark {
+    color: #fff !important;
+    background-color: #3f406e !important
+}
+
+.container-color-light {
+    color: #fff !important;
+    background-color: #555555 !important
+}
+
+.hr-color-dark {
+    color: #fff;
+    background-color: #434345 !important
+}
+
+.color1 {
+    color: #fff;
+    background-color: #121212 !important
+}
+
+.white {
+    color: #fff;
+    background-color: #fff
+}
+
+.gray {
+    color: #121212;
+    background-color: #a09eb0;
+}
+
+.light-gray {
+    color: #c2c2c2;
+    background-color: #c2c2c2;
+}

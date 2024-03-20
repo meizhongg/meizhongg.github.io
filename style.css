@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;700&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    background-color: #131316;
+    margin: 20px;
+    padding: 0;
+    font-size: 30px;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 105vh;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.navbar {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+}
+
+.nav {
+    cursor: pointer;
+}
+
+.nav h {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 10px;
+    transition: all 0.3s;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.avatar {
+    border-radius: 50%;
+    padding-right: 12px;
+    vertical-align: middle;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: all 0.3s;
+    font-size: 20px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: none;
+    color: #f398b5;
+}
+
+select {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+}
+
+.header a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s;
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+}
+
+h1 a {
+    color: #ffffff;
+    padding: 0;
+    font-size: 50px;
+}
+
+p a {
+    color: #ffffff;
+    padding: 0;
+    font-size: 35px;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 25px;
+}
+
+table {
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgb(90, 218, 179);
+}
+
+button:hover {
+    background-color: rgb(66, 155, 128);
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    height: 5px;
+    width: 3rem;
+    background: #5d1aee;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.empty-space {
+    height: 5rem;
+    width: 100%;
+    display: block;
+}
+
+.about-subtitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+}
+
+.about-content {
+    text-align: left;
+}
+
+.about-content p {
+    font-size: 20px;
+}
+
+.about-skills {
+    text-align: center;
+}
+
+
+/* view cards as 1 column on mobile (screen size less than 501px) */
+.about-content,
+.about-skills {
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+
+/* column sizing */
+@media (min-width:501px) {
+    .about-content {
+        width: 50%
+    }
+
+    .about-skills {
+        width: 50%
+    }
+}
+
+.skills {
+    display: inline-block;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 6px;
+    font-size: 20px;
+    background-color: #98a1b8;
+    border-radius: 5px;
+}
+
+a:link {
+    color: #FFFFFF;
+}
+
+a:visited {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #f398b5;
+}

@@ -1,0 +1,206 @@
+/* creates column view */
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+/* mobile view configuration */
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+/* hides elements past left right edges */
+html {
+    overflow-x: hidden
+}
+
+/* main fonts and font sizes */
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+/* headers font sizes */
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+/* line break style */
+hr {
+    border: 0;
+    border-top: 1px solid #575757;
+    margin: 20px 0
+}
+
+/* keeps contents centered */
+.contents {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px
+}
+
+/* card shadow */
+.container-shadow {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+/* page container */
+.page-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px
+}
+
+/* paragraph container */
+.container {
+    position: relative;
+    padding: 0.01em 16px
+}
+
+/* margins */
+.margin {
+    margin: 16px !important
+}
+
+.margin-top {
+    margin-top: 16px !important
+}
+
+.margin-bottom {
+    margin-bottom: 16px !important
+}
+
+.margin-left {
+    margin-left: 16px !important
+}
+
+.margin-right {
+    margin-right: 16px !important
+}
+
+/* paddings */
+.container:after,
+.container:before,
+.row-padding:after,
+.row-padding:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+/* view cards as 1 column on mobile (screen size less than 501px) */
+.left-column,
+.right-column {
+    float: left;
+    width: 100%
+}
+
+/* column sizing */
+@media (min-width:501px) {
+    .left-column {
+        width: 33.33333%
+    }
+
+    .right-column {
+        width: 66.66666%
+    }
+}
+
+/* spaces between each column */
+.row-padding,
+.row-padding>.left-column,
+.row-padding>.right-column {
+    padding: 0 8px
+}
+
+.padding-large {
+    padding: 12px 24px !important
+}
+
+.padding-top {
+    padding-top: 16px !important;
+}
+
+.padding-bottom {
+    padding-bottom: 16px !important;
+}
+
+.padding {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+}
+
+/* font sizes */
+.inner-text-size {
+    font-size: 18px !important
+}
+
+/* other font sizes */
+.subheader-text-size {
+    font-size: 20px !important
+}
+
+.header-text-size {
+    font-size: 24px !important
+}
+
+.large-icon-size {
+    font-size: 36px !important
+}
+
+/* highlight texts -- see 'Current' */
+.text-highlight {
+    color: #fff;
+    display: inline-block;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-align: center
+}
+
+/* rounded skill bar */
+.round-square {
+    border-radius: 4px
+}
